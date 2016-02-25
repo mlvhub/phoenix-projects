@@ -1,6 +1,8 @@
 defmodule Rumbl.Auth do
   import Plug.Conn
   import Comeonin.Bcrypt, only: [checkpw: 2]
+  import Phoenix.Controller
+  alias Rumbl.Router.Helpers
 
   def init(opts) do
     Keyword.fetch!(opts, :repo)
@@ -8,8 +10,14 @@ defmodule Rumbl.Auth do
 
   def call(conn, repo) do
     user_id = get_session(conn, :user_id)
-    user = user_id && repo.get(Rumbl.User, user_id)
-    assign(conn, :current_user, user)
+    cond do
+      user = conn.assigns[:current_user] ->
+        assign(conn, :current_user, user)
+      user = user_id && repo.get(Rumbl.User, user_id) ->
+        assign(conn, :current_user, user)
+      true ->
+        assign(conn, :current_user, nil)
+    end
   end
 
   def login(conn, user) do
@@ -38,6 +46,18 @@ defmodule Rumbl.Auth do
     configure_session(conn, drop: true)
     # If you need to keep the session, you can only delete the user_id like so:
     # delete_session(conn, :user_id)
+  end
+
+  def authenticate_user(conn, opts) do
+    #if Dict.has_key?(conn.assigns, :current_user) do
+    if conn.assigns.current_user do
+      conn
+    else
+      conn
+      |> put_flash(:error, "You must be logged in to access that page")
+      |> redirect(to: Helpers.page_path(conn, :index))
+      |> halt()
+    end
   end
 
 end
