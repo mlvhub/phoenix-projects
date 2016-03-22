@@ -1,0 +1,55 @@
+LOG:  database system was shut down at 2016-03-01 13:55:47 CST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "mlopezva" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  role "postgres" is not permitted to log in
+FATAL:  database "seat_saver_dev" does not exist
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+ERROR:  database "seat_saver_test" already exists
+STATEMENT:  CREATE DATABASE "seat_saver_test" ENCODING='UTF8'
+LOG:  unexpected EOF on client connection with an open transaction
+FATAL:  database "rumbl_dev" does not exist
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+WARNING:  worker took too long to start; canceled
+WARNING:  autovacuum worker started without a worker entry

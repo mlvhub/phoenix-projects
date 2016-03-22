@@ -1,0 +1,6 @@
+<h2>Show toy</h2>
+
+<ul id="show-list" data-id=<%= @toy.id %>>
+
+<%= link "Edit", to: toy_path(@conn, :edit, @toy) %>
+<%= link "Back", to: toy_path(@conn, :index) %>
