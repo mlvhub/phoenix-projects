@@ -1,0 +1,8 @@
+* creating priv/repo/migrations/20160326014140_create_annotation.exs
+* creating web/models/annotation.ex
+* creating test/models/annotation_test.exs
+
+Remember to update your repository by running migrations:
+
+    $ mix ecto.migrate
+
